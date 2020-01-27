@@ -6,6 +6,22 @@
         Example of how to do basic threading and logging in python
 
 
+    Sample Terminal Output:
+
+        2020-01-27 13:59:30.144 MainThread	function[<module>]	    a.py:69	Main right before starting thread t1
+        2020-01-27 13:59:30.145 Thread-1	function[thread_fn1]	a.py:41	Thread 1: starting
+        2020-01-27 13:59:30.145 MainThread	function[<module>]	    a.py:71	Main right after  starting thread t1
+        2020-01-27 13:59:30.145 Thread-2	function[thread_fn2]	a.py:46	Thread 2: starting
+        2020-01-27 13:59:30.145 MainThread	function[<module>]	    a.py:78	hi 0
+        2020-01-27 13:59:31.149 MainThread	function[<module>]  	a.py:78	hi 1
+        2020-01-27 13:59:32.151 MainThread	function[<module>]  	a.py:78	hi 2
+        2020-01-27 13:59:33.146 Thread-1	function[thread_fn1]	a.py:43	Thread 1: finishing
+        2020-01-27 13:59:33.153 MainThread	function[<module>]  	a.py:78	hi 3
+        2020-01-27 13:59:34.156 MainThread	function[<module>]  	a.py:78	hi 4
+        2020-01-27 13:59:35.162 MainThread	function[<module>]  	a.py:78	hi 5
+        2020-01-27 13:59:36.146 Thread-2	function[thread_fn2]	a.py:48	Thread 2: finishing
+        2020-01-27 13:59:36.165 MainThread	function[<module>]  	a.py:82	Main all done
+
     Other things to Research:
 
         Google:
